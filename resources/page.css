@@ -1,0 +1,191 @@
+
+@font-face {
+  font-family: "LINESeed_JP";
+  src: url('/resources/LINESeed_JP/LINESeedJP_OTF_Bd.woff2') format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LINESeed_JP";
+  src: url('/resources/LINESeed_JP/LINESeedJP_OTF_Eb.woff2') format("woff2");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LINESeed_JP";
+  src: url('/resources/LINESeed_JP/LINESeedJP_OTF_Rg.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LINESeed_JP";
+  src: url('/resources/LINESeed_JP/LINESeedJP_OTF_Th.woff2') format("woff2");
+  font-weight: thin;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "LINESeed_JP", sans-serif;
+}
+
+.page_header {
+    width: 100%;
+    height: 90px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+}
+
+.page_header.use-title-background {
+    background-color: transparent;
+}
+
+.page_header.scroll-background {
+    background-color: #ffffff;
+}
+
+.page_header .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.page_header .title .temp {
+    margin-left: 2px;
+    font-size: 1rem;
+    color: #b6b6b6;
+}
+
+.page_main {
+    /* 上 | 右 | 下 | 左 */
+    /*padding: 110px 10% 30px 10%;*/
+    padding-top: 120px;
+    padding-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.page_main.no-top-padding {
+    padding-top: 0px;
+}
+
+.page_main .m {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.page_main .title {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.page_main .title.padding2 {
+    margin-top: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.page_main .title.use-background {
+    padding-top: 180px;
+    margin-top: 0px;
+    background-size: cover;
+    background-position: center;
+}
+
+.page_main .image {
+    width: 80%;
+    border-radius: 5px;
+    display: block;
+}
+
+.page_main .image.margin-top {
+    margin-top: 5px;
+}
+
+.page_main .danraku {
+    padding-left: 30px;
+    list-style: square;
+}
+
+.page_main .danraku li {
+    margin-bottom: 20px;
+}
+
+.page_footer {
+    width: 100%;
+    height: 90px;
+    font-size: 0.9rem;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+    
+
+}
+
+@media screen and (max-width: 479px) {
+
+    .page_header {
+        height: 80px;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .page_header .title {
+        font-size: 1.25rem;
+    }
+
+    .page_header .title .temp {
+        font-size: 0.95rem;
+    }
+        
+    .page_main {
+        font-size: 1rem;
+    }
+
+    .page_main .m {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .page_main .title {
+        font-size: 2rem;
+    }
+
+    .page_main .title.use-background {
+        padding-top: 170px;
+    }
+
+    .page_main .title.padding2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .page_main .image {
+        width: 100%;
+    }
+
+    .page_footer {
+        height: 80px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        
+}
